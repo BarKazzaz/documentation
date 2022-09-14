@@ -13,7 +13,8 @@ A security audit is an assessment of package dependencies for security vulnerabi
 <Note>
 
 **Note:** The `npm audit` command is available in npm@6. To upgrade, run `npm install npm@latest -g`.
-
+**Note:** The `npm audit` command may not be suitable for front-end packages (such as React: https://github.com/facebook/create-react-app/issues/11174).
+  
 </Note>
 
 The <a href="https://docs.npmjs.com/cli/audit">`npm audit` command</a> submits a description of the dependencies configured in your package to your default registry and asks for a report of known vulnerabilities. `npm audit` checks direct dependencies, devDependencies, bundledDependencies, and optionalDependencies, but does not check peerDependencies.
